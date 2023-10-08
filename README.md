@@ -28,9 +28,32 @@
 
 ## 开发
 
-本地调试:
+~~~
+├─html                  在线页面
+│  └─ ...           
+│
+├─team-aa               算法包，自动构建到html中
+│  └─ ...
+│
+└─README.md             README
+~~~
 
 ```sh
 npm i
+
+cd html
+npm i
+```
+
+算法包调试:
+
+```sh
 npm run dev
+```
+
+页面调试:
+
+```sh
+cd html
+npm run serve
 ```
