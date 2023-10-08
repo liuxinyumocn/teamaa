@@ -4,7 +4,7 @@
   "description": "方便计算团队出行账单AA计算的在线工具。",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc -w"
   },
   "repository": {
     "type": "git",
