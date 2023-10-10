@@ -1,5 +1,5 @@
 # Team-AA
-方便计算团队出行账单AA计算的在线工具。
+方便计算团队出行账单AA计算的在线工具。[前往使用](http://blog.liuxinyumo.cn/teamaa/index.html)
 
 ## 使用说明
 

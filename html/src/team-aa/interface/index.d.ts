@@ -9,9 +9,7 @@ interface EvbodyData {
     recordNum: number;
     totalFee: number;
     relatedNum: number;
-    transfer: TransferInfo[];
-}
-interface TransferInfo {
-    to: string;
-    cash: number;
+    transfer: {
+        [key: string]: number;
+    };
 }
