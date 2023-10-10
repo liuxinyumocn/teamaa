@@ -6,8 +6,9 @@
         <div class="block">
           <span class="demonstration">请选择本次Team总人数 n = {{ num }} 这决定了你的表格权重列数</span>
           <el-slider v-model="num" :min="1" :max="50"></el-slider>
-          <el-button type="primary">选择本地 CSV 文件</el-button>
-          <el-button type="success">使用说明</el-button>
+          <el-button type="primary" @click="loadCsv">选择本地 CSV 文件</el-button>
+          <el-button type="success" @click="help">查看帮助</el-button>
+          <el-button type="warning" plain @click="demo">下载并导入测试用例</el-button>
         </div>
       </el-main>
       <el-footer>Powered By Nebula</el-footer>
@@ -21,11 +22,34 @@
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    
   },
   data() {
     return {
       num: 1,
+    }
+  },
+  methods: {
+    help() {
+      window.open("https://github.com/liuxinyumocn/teamaa/tree/feat/teamaa#team-aa");
+    },
+    loadCsv() {
+      var input = document.createElement('input');
+      input.type = 'file';
+      input.accept = '.csv';
+      input.addEventListener('change', function() {
+        var file = input.files[0];
+        var reader = new FileReader();
+        reader.onload = function(event) {
+          var content = event.target.result;
+          console.log(content);
+        };
+        reader.readAsText(file);
+      });
+      input.click();
+    },
+    demo() {
+
     }
   }
 }
