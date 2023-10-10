@@ -56,6 +56,10 @@
 <script>
 import { TeamAA } from './team-aa';
 
+const demoCsv = `付款人,张三,李四,王五,付款金额,付款原因,凭证
+张三,1,1,1,90,加油, 
+李四,1,1,,20,测试用例,,`;
+
 export default {
   name: 'App',
   components: {
@@ -92,7 +96,9 @@ export default {
       input.click();
     },
     demo() {
-
+      this.num = 3;
+      this.cal(demoCsv);
+      window.open("https://doc.weixin.qq.com/sheet/e3_ARcA3wbZAIMx2cRfZ9jSFq0R0OI10?scode=AJEAIQdfAAoHeZ1PGtARcA3wbZAIM&tab=BB08J2");
     },
     cal(csvContext = '') {
       const teamaa= new TeamAA(this.num);
