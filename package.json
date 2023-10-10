@@ -1,0 +1,23 @@
+{
+  "name": "team-aa",
+  "version": "1.0.0",
+  "description": "方便计算团队出行账单AA计算的在线工具。",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuxinyumocn/teamaa.git"
+  },
+  "author": "nebulaliu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuxinyumocn/teamaa/issues"
+  },
+  "homepage": "https://github.com/liuxinyumocn/teamaa#readme",
+  "dependencies": {
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2"
+  }
+}
